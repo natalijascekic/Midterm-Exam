@@ -28,7 +28,7 @@ def get_profit(lista):
 
 def main()
     lista = [125,1]
-    print("razlika je:",ger_profit(lista)
+    print("razlika je:",get_profit(lista)
 main()
 
 
