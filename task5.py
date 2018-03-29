@@ -18,13 +18,24 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def get_profit(lista):
+    maksimum_je = max(lista)
+    minimum_je = min(lista)
 
-# Write your function here
+    return maksimum_je - minimum_je
 
 
 
-def main():
-    # Test your function here
-    pass
-
+def main()
+    lista = [125,1]
+    print("razlika je:",ger_profit(lista)
 main()
+
+
+
+
+
+
+
+
+

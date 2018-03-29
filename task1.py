@@ -17,11 +17,22 @@
 """
 
 # Write your function here
+def area_of_circle(poluprecnik):
+    area_of_circle = abs(poluprecnik) * abs(poluprecnik) * 3.14
+    if (not isinstance(poluprecnik, int)) and (not isinstance(poluprecnik, float)):
+        return False
+
+
+
+    return area_of_circle
+
 
 
 
 def main():
-    # Test your function here
-    pass
+
+    povrsina = area_of_circle(2.3)
+    print("povrsina je:",povrsina)
+
 
 main()

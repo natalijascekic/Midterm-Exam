@@ -15,4 +15,16 @@
 ===================================================
 """
 
-# Write your code here
+sve_linije = open("attendance", "r").readlines()
+
+suma = 0
+for linija in sve_linije:
+    linija1 = linija.strip()
+    ime_i_broj = linija1.split(",")
+
+    ime = str (ime_i_broj[0])
+    broj = int(ime_i_broj[1])
+
+    suma += broj
+
+rezultat = open("rezultat.txt", "a").write("Suma brojeva je:" +str(suma) + "\n")

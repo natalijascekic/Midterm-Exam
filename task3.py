@@ -16,4 +16,29 @@
 ===================================================
 """
 
-# Write your code here
+
+def pozitivan(x):
+    if x >0 :
+        return True
+    else:
+        return False
+
+
+duzina_liste = int(input("koliko ce lista imati brojeva:"))
+
+lista = []
+pozitivni = negativni = 0
+
+for i in range(duzina_liste):
+    novi_broj = int(input("unesite broj" + str(i + 1) + ":"))
+    lista.append(novi_broj)
+
+    if pozitivan(novi_broj):
+        pozitivni += 1
+    else:
+        negativni += 1
+
+print("Vasa lista:", str(lista))
+print("Lista ima pozitivnih brojeva:", pozitivni)
+print("Lista ima negativnih brojeva:", negativni)
+

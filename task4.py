@@ -14,12 +14,23 @@
 ===================================================
 """
 
-# Write your function here
+def velikoslovo(recenica):
+    nova_recenica = ""
 
+    for karakter in recenica:
+        broj_slova = ord(karakter)
+
+        if broj_slova > 96 and ord(karakter) < 123:
+            broj_velikog_slova = broj_slova - 32
+            karakter = chr(broj_velikog_slova)
+
+        nova_recenica += karakter
+    return nova_recenica
 
 
 def main():
-    # Test your function here
-    pass
+    recenica = input("unesite recenicu:")
+    veliko_slovo = velikoslovo(recenica)
+    print(veliko_slovo)
 
 main()

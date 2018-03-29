@@ -12,4 +12,24 @@
 ===================================================
 """
 
-# Write your code here
+def proizvod_cifara(broj):
+    if not isinstance(broj,int):
+        return -1
+
+    proizvod = 1
+
+    abs_broj = abs(broj)
+    while abs_broj > 0:
+        cifra = abs_broj % 10
+        abs_broj = abs_broj // 10
+        proizvod += cifra
+    return proizvod
+
+def main():
+     neki_broj = -23
+     proizvod = proizvod_cifara(neki_broj)
+     print("proizvod cifara je", proizvod)
+
+main()
+
+
